@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy-Paste Helper</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Copy-Paste Helper</h1>
+            <p>Use the Clipboard API to copy and paste text</p>
+        </div>
+
+        <div id="statusMessage" class="status-message">
+            <span id="statusText"></span>
+        </div>
+
+        <div class="textarea-section">
+            <label for="textArea">Your Text</label>
+            <textarea 
+                id="textArea" 
+                placeholder="Type or paste your text here..."
+            ></textarea>
+            <div class="char-count">
+                <span id="charCount">0</span> characters
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-copy" id="copyBtn">📄 Copy Text</button>
+            <button class="btn-paste" id="pasteBtn">📋 Paste Text</button>
+            <button class="btn-clear" id="clearBtn">Clear</button>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 How it works:</h3>
+            <ul>
+                <li>• <strong>Copy:</strong> Copies textarea content to clipboard</li>
+                <li>• <strong>Paste:</strong> Pastes clipboard content into textarea</li>
+                <li>• <strong>Note:</strong> Your browser may ask for clipboard permission</li>
+            </ul>
+        </div>
+    </div>
+
+       <script src="script.js"></script>
+</body>
+</html>
